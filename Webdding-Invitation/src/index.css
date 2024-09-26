@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #6d6d6d -278.56%,
+    #222222 -78.47%,
+    #330d0d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(91, 66, 66, 0.1);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: 'font-wedding';
+  src: url('./assets/fonts/wedding.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'font-wedding-two';
+  src: url('./assets/fonts/wedding-two.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'font-mandala';
+  src: url('./assets/fonts/mandala.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'font-handw';
+  src: url('./assets/fonts/handw.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'font-signature';
+  src: url('./assets/fonts/signature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #f14949 0.89%,
+    #f84c4c 17.23%,
+    #f32828 42.04%,
+    #f71515 55.12%,
+    #cf0808 71.54%,
+    #a30303 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+ .text-gold{
+  color: #B29566
+ }
+ .bg-gold-gradient{
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+ }
+ .bg-gold{
+  background: #B29566
+ }
+
+ .border-gold{
+  color: #B29566
+ }
+.bg-white-gradient {
+  background: linear-gradient(
+    157.81deg, 
+    #fdfdfd -43.27%,
+    #bebebe -21.24%,
+    #999999 12.19%,
+    #5f5f5f 29.82%,
+    #555555 51.94%,
+    #2e2e2e 90.29%
+  );
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    -168.39deg,
+    #747474 -278.56%,
+    #363636 -78.47%,
+    #141414 91.61%
+  );
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+}
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #1d1010 100%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.remove-bg {
+  filter: brightness(1.1) grayscale(100%);
+  mix-blend-mode: multiply;  
+}
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card, .plan-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+.bg_popular {
+  border-color: #8d1414;
+  background-color: rgb(209, 6, 6);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 20px 100px -10px rgba(77, 77, 77, 0.664);
+}
+
+
+.red__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #e22719 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+.black__gradient {
+  background: rgba(0, 0, 0, 0.719);
+  filter: blur(450px);
+}
